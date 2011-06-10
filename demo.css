@@ -1,0 +1,94 @@
+body {
+  background: #BBE8C6;
+  color: #444;
+}
+#page {
+  width: 760px;
+  margin: 0px auto;
+}
+h1 {
+  letter-spacing: -2px;
+  margin: 12px 18px;
+}
+
+body, input, select, textarea {
+  font-family: Lucida Grande;
+  font-size: 14px;
+}
+
+fieldset, .errors {
+  background: #fff;
+  border: solid 1px #bbb;
+  border-radius: 6px;
+  padding: 12px 18px;
+  margin: 12px 0px;
+}
+
+/* generic forms */
+fieldset {
+  position: relative;
+  padding-top: 44px;
+}
+legend {
+  font-family: Lucida Grande;
+  font-size: 20px;
+  letter-spacing: -1px;
+  position: absolute;
+  top: 0px;
+  margin: 12px 0px;
+  color: #8C6B0B;
+}
+label {
+  display: block;
+  padding: 6px 0px 3px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+input, select, textarea {
+  padding: 6px;
+  border: inset 2px;
+  width: 320px;
+}
+
+.errors {
+  padding: 0px;
+}
+.errors h2 {
+  font-size: 14px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#faa), to(#f55));
+  padding: 12px 18px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: 0px;
+}
+.errors ul {
+  list-style-type: square;
+  overflow: hidden;
+}
+.errors li {
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.error {
+  border: solid 2px #c00;
+}
+.error + span {
+  margin-left: 12px;
+  color: #c00;
+  font-weight: bold;
+}
+.error-link {
+  color: #00c;
+  float: left;
+  clear: both;
+  margin-bottom: 4px;
+  cursor: pointer;
+  line-height: 18px !important;
+  border-bottom: solid 1px transparent;
+}
+.error-link:hover {
+  border-bottom: dotted 1px #00c;
+}

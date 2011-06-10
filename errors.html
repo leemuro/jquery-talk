@@ -2,44 +2,58 @@
 <html> 
 <head> 
   <title>Errors Demo</title>
+  <link rel="stylesheet" href="demo.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.blunder.js"></script>
 </head>
 <body>
-  <form>
-    <fieldset>
-      <legend>Account Information</legend>
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" />
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" />
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password-confirm" />
-      <label for="password-confirm">Confirm Password</label>
-      <input type="password" id="password-confirm" name="password-confirm" />
-    </fieldset>
+  <div id="page">
+    <h1>Sign Up</h1>
+    <form>
+      <div class="errors">
+        <h2>Your account could not be created.  Please correct the following errors.</h2>
+        <ul>
+          <li data-errorkey="username">The username "John Smith" is already taken</li>
+          <li data-errorkey="birth-date">Birth Date is required</li>
+          <li data-errorkey="expiration-date">Expiration Date is required</li>
+        </ul>
+      </div>
+      <fieldset>
+        <legend>Account Information</legend>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" value="jsmith@gmail.com" />
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" value="jsmith" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password-confirm" value="test" />
+        <label for="password-confirm">Confirm Password</label>
+        <input type="password" id="password-confirm" name="password-confirm" value="tes8" />
+      </fieldset>
 
-    <fieldset>
-      <legend>Profile Information</legend>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" />
-      <label for="birth-date">Birth Date</label>
-      <input type="text" id="birth-date" name="birth-date" />
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </fieldset>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="John Smith" />
+        <label for="birth-date">Birth Date</label>
+        <input type="text" id="birth-date" name="birth-date" />
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio">I am the greatest man alive!</textarea>
+      </fieldset>
 
-    <fieldset>
-      <legend>Credit Card Information</legend>
-      <label for="cc-type">Type</label>
-      <select id="cc-type" name="cc-type">
-        <option>Visa</option>
-        <option>MasterCard</option>
-        <option>Discover</option>
-      </select>
-      <label for="cc-number">Number</label>
-      <input type="text" id="cc-number" name="cc-number" />
-      <label for="cc-expiration">Expiration Date</label>
-      <input type="text" id="cc-expiration" name="cc-expiration" />
-    </fieldset>
-  </form>
+      <fieldset>
+        <legend>Credit Card Information</legend>
+        <label for="cc-type">Type</label>
+        <select id="cc-type" name="cc-type">
+          <option>Visa</option>
+          <option>MasterCard</option>
+          <option>Discover</option>
+        </select>
+        <label for="cc-number">Number</label>
+        <input type="text" id="cc-number" name="cc-number" value="9384029349584923" />
+        <label for="cc-expiration">Expiration Date</label>
+        <input type="text" id="expiration-date" name="expiration-date" />
+      </fieldset>
+    </form>
+  </div>
 </body>
 </html>
