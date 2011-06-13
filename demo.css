@@ -16,12 +16,20 @@ body, input, select, textarea {
   font-size: 14px;
 }
 
-fieldset, .errors {
+fieldset, .errors, .listing {
   background: #fff;
   border: solid 1px #bbb;
   border-radius: 6px;
   padding: 12px 18px;
   margin: 12px 0px;
+}
+legend, .listing h1 {
+  font-family: Lucida Grande;
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #8C6B0B;
+  font-weight: normal;
+  margin: 0px;
 }
 
 /* generic forms */
@@ -30,13 +38,9 @@ fieldset {
   padding-top: 44px;
 }
 legend {
-  font-family: Lucida Grande;
-  font-size: 20px;
-  letter-spacing: -1px;
   position: absolute;
   top: 0px;
   margin: 12px 0px;
-  color: #8C6B0B;
 }
 label {
   display: block;
@@ -84,11 +88,138 @@ input, select, textarea {
   color: #00c;
   float: left;
   clear: both;
-  margin-bottom: 4px;
   cursor: pointer;
+  margin-bottom: 1px;
   line-height: 18px !important;
   border-bottom: solid 1px transparent;
 }
 .error-link:hover {
   border-bottom: dotted 1px #00c;
+}
+
+.listing {
+  padding: 4px 18px;
+  position: relative;
+}
+.listing .edit-button {
+  position: absolute;
+  right: 0px;
+  top: -45px;
+}
+.listing h2 {
+  font-size: 16px;
+  margin: 10px 0px 5px 0px;
+  padding: 0px;
+}
+.listing ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.listing li {
+  border-bottom: dotted 1px #ccc;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.listing li:last-child {
+  border-bottom: none;
+}
+.listing p {
+  margin: 5px 0px 10px 0px;
+}
+.listing input {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100px;
+}
+
+.delete-toggle {
+  background-color: #fff;
+  background-image: url(delete.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 22px;
+  height: 22px;
+  border: none;
+  float: left;
+  cursor: pointer;
+  margin: 10px 12px 0px 0px;
+}
+
+.edit-button {
+  background: #2639c9;
+  background: -moz-linear-gradient(top, #2e43ee 0%, #2639c9 50%, #0017b5 50%, #001189 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #2e43ee), color-stop(0.5, #2939c6), color-stop(0.5, #0017b5), color-stop(1, #001189));
+  border: 1px solid #001195;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4), 0 1px 3px #333;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4), 0 1px 3px #333;
+  box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4), 0 1px 3px #333;
+  color: #fff;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  width: 80px;
+}
+
+.edit-button:hover {
+  background: #0005cb;
+  background: -moz-linear-gradient(top, #7378f3 0%, #4d50db 50%, #0005cb 50%, #0106a2 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #7378f3), color-stop(0.5, #4d50db), color-stop(0.5, #0005cb), color-stop(1, #0106a2));
+  cursor: pointer;
+}
+
+.edit-button:active {
+  background: #0003b3;
+  background: -moz-linear-gradient(top, #283cd4 0%, #2432ad 50%, #00159c 50%, #000d70 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #283cd4), color-stop(0.5, #2432ad), color-stop(0.5, #00159c), color-stop(1, #000d70));
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4);
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4);
+  box-shadow: inset 0px 0px 0px 1px rgba(100, 115, 255, 0.4);
+}
+
+.delete-button {
+  background: #c63929;
+  background: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #ee432e), color-stop(0.5, #c63929), color-stop(0.5, #b51700), color-stop(1, #891100));
+  border: 1px solid #951100;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  color: #fff;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  width: 150px;
+}
+
+.delete-button:hover {
+  background: #cb0500;
+  background: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #f37873), color-stop(0.5, #db504d), color-stop(0.5, #cb0500), color-stop(1, #a20601));
+  cursor: pointer;
+}
+
+.delete-button:active {
+  background: #b30300;
+  background: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d43c28), color-stop(0.5, #ad3224), color-stop(0.5, #9c1500), color-stop(1, #700d00));
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
 }

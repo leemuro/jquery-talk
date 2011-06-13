@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Deletes Demo</title>
+  <link rel="stylesheet" href="demo.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.deleteList.js"></script>
+  <script type="text/javascript" src="rotate.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.delete-button').click(function() {
+        $(this).closest('li').remove();
+        return false;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="page">
+    <h1>Bookmarks</h1>
+    <div class="deletable listing">
+      <ul>
+        <li>
+          <h2>Google</h2>
+          <p><a href="http://www.google.com">http://www.google.com</a></p>
+          <form class="delete-form">
+            <input class="delete-button" type="submit" value="delete" />
+          </form>
+        </li>
+        <li>
+          <h2>Twitter</h2>
+          <p><a href="http://www.twitter.com">http://www.twitter.com</a></p>
+          <form class="delete-form">
+            <input class="delete-button" type="submit" value="delete" />
+          </form>
+        </li>
+        <li>
+          <h2>Facebook</h2>
+          <p><a href="http://www.facebook.com">http://www.facebook.com</a></p>
+          <form class="delete-form">
+            <input class="delete-button"type="submit" value="delete" />
+          </form>
+        </li>
+        <li>
+          <h2>Apple</h2>
+          <p><a href="http://www.apple.com">http://www.apple.com</a></p>
+          <form class="delete-form">
+            <input class="delete-button" type="submit" value="delete" />
+          </form>
+        </li>
+        <li>
+          <h2>GitHub</h2>
+          <p><a href="http://www.github.com">http://www.github.com</a></p>
+          <form class="delete-form">
+            <input class="delete-button" type="submit" value="delete" />
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
