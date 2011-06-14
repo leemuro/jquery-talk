@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Search Demo</title>
+  <link rel="stylesheet" href="demo.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="quicksilver.js"></script>
+  <script type="text/javascript" src="jquery.liveSearch.js"></script>
+  <script type="text/javascript" src="autocolumn.js"></script>
+  <script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+  <div id="page">
+    <h1>Browse Books By Category</h1>
+    <input type="text" class="search" placeholder="Type here to search" />
+    <div class="categories">
+      <div>
+        <h1>Entertainment &amp; Leisure</h1>
+        <ul>
+          <li><a href="#">Arts and Cinema</a></li>
+          <li><a href="#">Astrology</a></li>
+          <li><a href="#">Automobiles</a></li>
+          <li><a href="#">Cartoon</a></li>
+          <li><a href="#">Cooking</a></li>
+          <li><a href="#">Counterculture</a></li>
+          <li><a href="#">Computing/Internet</a></li>
+          <li><a href="#">Do-It-Yourself</a></li>
+          <li><a href="#">Drugs</a></li>
+          <li><a href="#">Gambling</a></li>
+          <li><a href="#">Gold Mining Camps</a></li>
+          <li><a href="#">Party Games</a></li>
+          <li><a href="#">Pets</a></li>
+          <li><a href="#">Sexuality</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Business &amp; Finance</h1>
+        <ul>
+          <li><a href="#">Bankruptcy</a></li>
+          <li><a href="#">Business/Marketing</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Computing/Internet</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Film Production</a></li>
+          <li><a href="#">Finance/Money</a></li>
+          <li><a href="#">Home Buyers</a></li>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Strategic Planning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Hobbies</h1>
+        <ul>
+          <li><a href="#">Antiques</a></li>
+          <li><a href="#">Collectibles</a></li>
+          <li><a href="#">Cooking</a></li>
+          <li><a href="#">Do-It-Yourself</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Law &amp; Order </h1>
+        <ul>
+          <li><a href="#">Criminal Justice</a></li>
+          <li><a href="#">Law</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Fiction</h1>
+        <ul>
+          <li><a href="#">General</a></li>
+          <li><a href="#">Adventure</a></li>
+          <li><a href="#">Horror</a></li>
+          <li><a href="#">Humor</a></li>
+          <li><a href="#">Literature</a></li>
+          <li><a href="#">Mystery</a></li>
+          <li><a href="#">Romance</a></li>
+          <li><a href="#">SciFi / Fantasy</a></li>
+          <li><a href="#">Suspense</a></li>
+          <li><a href="#">Young Adult</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>History</h1>
+        <ul>
+          <li><a href="#">African American</a></li>
+          <li><a href="#">Ancient Egypt</a></li>
+          <li><a href="#">Autobiography/Biography</a></li>
+          <li><a href="#">Counterculture</a></li>
+          <li><a href="#">Folk History</a></li>
+          <li><a href="#">History - General</a></li>
+          <li><a href="#">Holocaust</a></li>
+          <li><a href="#">Judaica</a></li>
+          <li><a href="#">Memoirs</a></li>
+          <li><a href="#">Military</a></li>
+          <li><a href="#">Revisionist History</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Self -</h1>
+        <ul>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Growth</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Motivational</a></li>
+          <li><a href="#">Sexuality</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Special Interest</h1>
+        <ul>
+          <li><a href="#">Gay / Lesbian</a></li>
+          <li><a href="#">Gun Control</a></li>
+          <li><a href="#">Politically Incorrect</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Sexuality</a></li>
+          <li><a href="#">Transgender</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>Health &amp; Living</h1>
+        <ul>
+          <li><a href="#">Abuse</a></li>
+          <li><a href="#">Aging</a></li>
+          <li><a href="#">Alcoholism</a></li>
+          <li><a href="#">Care Giving</a></li>
+          <li><a href="#">Disability</a></li>
+          <li><a href="#">Drugs</a></li>
+          <li><a href="#">Family Values</a></li>
+          <li><a href="#">Health/Fitness</a></li>
+          <li><a href="#">Health/Nutrition</a></li>
+          <li><a href="#">Holistic Health</a></li>
+          <li><a href="#">Learning Disability</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Marriage/Relationships</a></li>
+          <li><a href="#">Medical</a></li>
+          <li><a href="#">Meditation</a></li>
+          <li><a href="#">Mental Health</a></li>
+          <li><a href="#">Parenting</a></li>
+          <li><a href="#">Sexuality</a></li>
+          <li><a href="#">Women's Issues</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1>General Interest</h1>
+        <ul>
+          <li><a href="#">Adventure</a></li>
+          <li><a href="#">Americana</a></li>
+          <li><a href="#">Chapter Books</a></li>
+          <li><a href="#">Children's</a></li>
+          <li><a href="#">Christian</a></li>
+          <li><a href="#">Counterculture</a></li>
+          <li><a href="#"> Drugs</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Environment</a></li>
+          <li><a href="#">Essay</a></li>
+          <li><a href="#">Nature</a></li>
+          <li><a href="#">New Age</a></li>
+          <li><a href="#">Philosophy</a></li>
+          <li><a href="#">Poetry</a></li>
+          <li><a href="#">Psychology</a></li>
+          <li><a href="#">Quotations</a></li>
+          <li><a href="#">Religion</a></li>
+          <li><a href="#">Reluctant Readers</a></li>
+          <li><a href="#">Revelation</a></li>
+          <li><a href="#">Sexuality</a></li>
+          <li><a href="#">Sociology</a></li>
+          <li><a href="#">Spiritual</a></li>
+          <li><a href="#">Uncategorized</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
