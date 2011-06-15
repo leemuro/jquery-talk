@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Confirm</title>
+  <link rel="stylesheet" href="demo.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.inlineConfirm.js"></script>
+  <script type="text/javascript" src="enhance.js"></script>
+</head>
+<body>
+  <div id="page">
+    <form>
+      <h1>My Account</h1>
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+        <div>
+          <input type="submit" class="button" value="Update Account" />
+          <br />
+          <input type="submit" class="delete-button" value="Delete Account" 
+            data-warning="Your account will be deleted forever.  You cannot undo this action."
+            data-confirm="I understand, delete my account" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
