@@ -55,6 +55,9 @@ fieldset {
   position: relative;
   padding-top: 44px;
 }
+fieldset .actions {
+  margin-top: 15px;
+}
 legend {
   position: absolute;
   top: 0px;
@@ -73,7 +76,6 @@ input[type=text], input[type=password], select, textarea {
   width: 320px;
 }
 input[type=submit] {
-  margin-top: 15px;
   font-size: 20px;
 }
 

@@ -1,5 +1,4 @@
 $(function() {
-  $('[data-confirm]').inlineConfirm();
 
   // for demo only, to show effect on button for 5 seconds
   $('form input[type=submit]:not([data-confirm])').click(function() {
@@ -15,6 +14,8 @@ $(function() {
     $(this).val(message).attr('disabled', 'disabled');
   });
 
+  if($.fn.inlineConfirm)
+    $('[data-confirm]').inlineConfirm();
 
   if($.fn.blunder)
     $('form').blunder();
