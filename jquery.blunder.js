@@ -5,8 +5,8 @@
     $this = $(this);
     $errors = $('.errors ul li', $this);
     $errors.each(function() {
-      $error = $(this);
-      $field = $('#' + $error.attr('data-errorkey')); 
+      var $error = $(this);
+      var $field = $('#' + $error.attr('data-errorkey')); 
       $field.addClass('error').after($('<span>' + $error.text() + '</span>'));
       $error.addClass('error-link').click(function() {
         $field.focus();

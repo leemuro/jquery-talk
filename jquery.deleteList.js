@@ -1,16 +1,16 @@
 (function($) {
   $.fn.deleteList = function() {
-    var $this = $(this);
+    var $list = $(this);
 
-    $('.delete-button', $this).hide();
+    $('.delete-button', $list).hide();
 
-    $this.find('li').each(function() {
+    $list.find('li').each(function() {
       $deleteToggle = $('<button class="delete-toggle"></button>').hide();
       $deleteToggle.click(function() {
         $deleteButton = $(this).parent().find('.delete-form .delete-button');
 
-        $('.delete-toggle', $this).rotate({animateTo: 0, duration: 200});
-        $('.delete-button', $this).not($deleteButton).slideOut();
+        $('.delete-toggle', $list).rotate({animateTo: 0, duration: 200});
+        $('.delete-button', $list).not($deleteButton).slideOut();
 
         if($deleteButton.is(':visible')) {
           $(this).rotate({animateTo: 0, duration: 200});
@@ -25,19 +25,19 @@
       $(this).prepend($deleteToggle);
     });
 
-    $editButton = $('<button class="edit-button">Edit</button>');
+    $editButton = $('<button class="button">Edit</button>');
     $editButton.click(function() {
-      if($editButton.text() == 'Done') {
-        $editButton.text('Edit');
-        $('.delete-toggle', $this).slideOut().rotate({animateTo: 0, duration: 200});
-        $('.delete-button', $this).slideOut();
+      if($editButton.text() == 'Edit') {
+        $editButton.text('Done');
+        $('.delete-toggle', $list).slideIn();
       }
       else {
-        $editButton.text('Done');
-        $('.delete-toggle', $this).slideIn();
+        $editButton.text('Edit');
+        $('.delete-toggle', $list).slideOut().rotate({animateTo: 0, duration: 200});
+        $('.delete-button', $list).slideOut();
       }
     });
-    $this.prepend($editButton);
+    $list.prepend($editButton);
 
     return $(this);
   };

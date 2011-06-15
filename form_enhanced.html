@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Form Enhanced</title>
+  <link rel="stylesheet" href="demo.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="enhance.js"></script>
+</head>
+<body>
+  <div id="page">
+    <form>
+      <fieldset>
+        <legend>Contact Us</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <div>
+          <input type="submit" value="Send Message" data-submit="Sending..." />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
